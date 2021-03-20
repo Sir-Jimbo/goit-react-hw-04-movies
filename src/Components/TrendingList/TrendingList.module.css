@@ -1,0 +1,12 @@
+.list {
+   padding-left: 40px;
+}
+
+.item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.link:hover,
+link:focus {
+   color: palevioletred;
+}

@@ -1,0 +1,14 @@
+.submenu {
+   margin-top: 15px;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #000;
+}
+
+.list {
+   padding-left: 40px;
+}
+
+.link:hover,
+.link:focus {
+   color: palevioletred;
+}

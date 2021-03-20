@@ -1,0 +1,24 @@
+.searchbox {
+   margin-bottom: 40px;
+}
+
+.input {
+   padding: 15px;
+   width: 25%;
+   font-size: 16px;
+   outline: none;
+   color: grey;
+}
+
+.button {
+   width: 150px;
+   padding: 15px;
+   font-size: 16px;
+}
+
+.button:hover,
+.button:focus {
+   cursor: pointer;
+   background-color: palevioletred;
+   color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.list {
+   display: flex;
+   list-style: none;
+   margin: 0;
+}
+
+.item:not(:last-child) {
+   margin-right: 15px;
+}
+
+.NavLink {
+   text-decoration: none;
+   color: currentColor;
+   font-weight: 500;
+}
+
+.NavLink:hover,
+.NavLink:focus,
+.NavLinkActive {
+   color: palevioletred;
+}
