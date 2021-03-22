@@ -20,9 +20,14 @@ class MovieDetailsPage extends Component {
    state = { movie: null }
 
    async componentDidMount() {
-      const { match } = this.props
-      await moviesApi.fetchMovieDetails(match.params.movieId)
-         .then(movie => this.setState({ movie }));
+      try {
+         const { match } = this.props
+         return await moviesApi.fetchMovieDetails(match.params.movieId)
+            .then(movie => this.setState({ movie }));
+      }
+      catch (e) {
+         return 'Movie is not found';
+      }
    }
 
    handleGoBack = () => {

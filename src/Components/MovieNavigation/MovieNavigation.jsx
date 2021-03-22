@@ -14,7 +14,7 @@ const MovieNavigation = ({ match, location }) => {
                   className={s.link}
                   to={{
                      pathname: `${match.url}/cast`,
-                     state: { from: location.state.from || routes.movies }
+                     state: { from: location?.state?.from || routes.movies }
                   }}
                >
                   Cast
@@ -25,7 +25,7 @@ const MovieNavigation = ({ match, location }) => {
                   className={s.link}
                   to={{
                      pathname: `${match.url}/reviews`,
-                     state: { from: location.state.from || routes.movies }
+                     state: { from: location?.state?.from || routes.movies }
                   }}
                >
                   Reviews

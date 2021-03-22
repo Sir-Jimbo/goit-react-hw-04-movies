@@ -15,7 +15,12 @@ class HomePage extends Component {
    }
 
    async componentDidMount() {
-      this.fetchMovies();
+      try {
+         return this.fetchMovies();
+      }
+      catch (e) {
+         return 'Movies is not found';
+      }
    }
 
    fetchMovies = () => {

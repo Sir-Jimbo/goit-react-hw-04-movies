@@ -18,9 +18,14 @@ class MoviesPage extends Component {
    }
 
    async componentDidMount() {
-      const { query } = await getQueryParams(this.props.location.search);
-      if (query) {
-         this.fetchMovies(query);
+      try {
+         const { query } = await getQueryParams(this.props.location.search);
+         if (query) {
+            return this.fetchMovies(query);
+         }
+      }
+      catch (e) {
+         return 'Movie is not found';
       }
    }
 
